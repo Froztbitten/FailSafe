@@ -1,0 +1,27 @@
+                                  columns     means
+1                             term_length  0.993389
+10                             prediction  0.908656
+5                         high_school_gpa  0.678836
+2                  term_attempted_credits  0.654821
+11                             gpa_change  0.582990
+8                    prior_cumulative_gpa  0.579213
+6   prior_term_fraction_completed_credits  0.513117
+3               prior_term_earned_credits  0.298624
+4                prior_total_credit_hours  0.250259
+9                     time_at_institution  0.179992
+0                              final_term  0.143882
+7                                transfer  0.058335
+
+                                  columns     means
+10                             prediction  0.975372
+8                    prior_cumulative_gpa  0.730391
+5                         high_school_gpa  0.679618
+11                             gpa_change  0.658736
+6   prior_term_fraction_completed_credits  0.651889
+3               prior_term_earned_credits  0.647543
+4                prior_total_credit_hours  0.304452
+9                     time_at_institution  0.192667
+2                  term_attempted_credits  0.144368
+7                                transfer  0.059796
+1                             term_length  0.038096
+0                              final_term  0.031723
