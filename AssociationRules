@@ -1,0 +1,120 @@
+Numerical DataFrame
+                                        count          mean           std           min           25%           50%           75%           max  Cardinality  % Missing
+person_party_id                        8276.0  1.062771e+06    695.645090  1.061215e+06  1.062256e+06  1.062828e+06  1.063281e+06  1.064363e+06         2043   0.000000
+program_exit_code                      5958.0  1.790198e+00      0.981082  1.000000e+00  1.000000e+00  2.000000e+00  2.000000e+00  4.000000e+00            3   0.389057
+cms_user_ext_id                        8276.0  3.726826e+05  45008.267508  1.006900e+04  3.742260e+05  3.838920e+05  3.930260e+05  4.128240e+05         2043   0.000000
+term_length                            8276.0  7.461515e+01     41.317591  1.800000e+01  2.000000e+01  1.060000e+02  1.070000e+02  1.070000e+02            6   0.000000
+prior_cum_credits_not_completed        7127.0  5.411814e-01      2.609090 -6.750000e+00 -5.000000e-01 -2.500000e-01  0.000000e+00  3.350000e+01           92   0.161218
+term_attempted_credits                 8276.0  1.020124e+01      5.652851  0.000000e+00  3.000000e+00  1.300000e+01  1.500000e+01  2.200000e+01           42   0.000000
+delta_unmet_need                       1852.0  6.052365e+02   4102.511717 -3.661600e+04  0.000000e+00  0.000000e+00  0.000000e+00  3.896800e+04          523   3.468683
+unmet_need                             5177.0  1.640763e+03   4322.389657  0.000000e+00  0.000000e+00  0.000000e+00  6.360000e+02  4.091700e+04          750   0.598609
+prior_term_earned_credits              7127.0  1.082773e+01      5.494455  0.000000e+00  3.000000e+00  1.350000e+01  1.525000e+01  2.175000e+01           76   0.161218
+prior_total_credit_hours               7127.0  6.501554e+01     36.458695  0.000000e+00  3.275000e+01  6.225000e+01  9.625000e+01  2.067500e+02          553   0.161218
+high_school_gpa                        7954.0  3.390171e+00      0.466557  0.000000e+00  3.050000e+00  3.450000e+00  3.769000e+00  4.992000e+00         1058   0.040483
+prior_term_fraction_completed_credits  7124.0  9.841830e-01      0.097028  0.000000e+00  1.000000e+00  1.000000e+00  1.010000e+00  1.500000e+00           73   0.161707
+prior_term_gpa                         7127.0  3.036350e+00      0.795633  0.000000e+00  2.592500e+00  3.157000e+00  3.700000e+00  4.000000e+00         1591   0.161218
+admitted_zip_code                      8152.0  4.707055e+04   5395.238767  2.825000e+03  4.635000e+04  4.672500e+04  4.696200e+04  9.813300e+04          596   0.015211
+prior_cumulative_gpa                   7127.0  2.956754e+00      0.617024  0.000000e+00  2.523500e+00  3.023000e+00  3.430000e+00  4.000000e+00         2212   0.161218
+time_at_institution                    8276.0  1.497221e+00      1.182993 -2.010000e+00  3.600000e-01  1.350000e+00  2.410000e+00  1.699000e+01           89   0.000000
+prediction                             8276.0  9.459870e-01      0.118169  2.103038e-01  9.543182e-01  9.869778e-01  9.948755e-01  9.980819e-01         3972   0.000000
+outcome                                8276.0  9.470759e-01      0.223896  0.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00            2   0.000000
+
+Categorical DataFrame
+                     count unique        top  freq  % Missing
+final_term            8276      2      False  7437        0.0
+credential            8276      4         BS  5704        0.0
+full_part_time        8276      2  Full-time  7872        0.0
+on_campus             8276      2      False  4395        0.0
+prior_full_part_time  8276      3  Full-time  6809        0.0
+transfer              8276      2      False  7731        0.0
+
+Frequent Itemsets of Size 1
+7838 outcome:pass
+7731 transfer:False
+7437 final_term:False
+6809 prior_full_part_time:Full-time
+5704 credential:BS
+5177 term_length:(42, 120]
+4925 prior_term_fraction_completed_credits:1.0
+4787 term_start_month:Jan
+4610 unmet_need:(-40.917, 5114.625]
+4395 on_campus:False
+
+Frequent Itemsets of Size 2
+7422                          final_term:False                                       outcome:pass
+7328                            transfer:False                                       outcome:pass
+6963                            transfer:False                                   final_term:False
+6500                              outcome:pass                     prior_full_part_time:Full-time
+6381                            transfer:False                     prior_full_part_time:Full-time
+6113                          final_term:False                     prior_full_part_time:Full-time
+5385                             credential:BS                                       outcome:pass
+5299                            transfer:False                                      credential:BS
+5083                             credential:BS                                   final_term:False
+4831                            transfer:False                              term_length:(42, 120]
+4807                     term_length:(42, 120]                                       outcome:pass
+4735                             credential:BS                     prior_full_part_time:Full-time
+4657                              outcome:pass          prior_term_fraction_completed_credits:1.0
+4647 prior_term_fraction_completed_credits:1.0                     prior_full_part_time:Full-time
+4645                      term_start_month:Jan                     prior_full_part_time:Full-time
+4610            unmet_need:(-40.917, 5114.625]                              term_length:(42, 120]
+4591                            transfer:False          prior_term_fraction_completed_credits:1.0
+4494                      term_start_month:Jan                                       outcome:pass
+4488                            transfer:False                               term_start_month:Jan
+4438                     term_length:(42, 120]                                   final_term:False
+4388            unmet_need:(-40.917, 5114.625]                                       outcome:pass
+4321            unmet_need:(-40.917, 5114.625]                                     transfer:False
+4311                          final_term:False          prior_term_fraction_completed_credits:1.0
+4250                           on_campus:False                                       outcome:pass
+4158                      term_start_month:Jan                                   final_term:False
+
+Frequent Itemsets of Size 3
+6949                          final_term:False                                       outcome:pass                                     transfer:False
+6099                          final_term:False                                       outcome:pass                     prior_full_part_time:Full-time
+6090                              outcome:pass                     prior_full_part_time:Full-time                                     transfer:False
+5738                          final_term:False                     prior_full_part_time:Full-time                                     transfer:False
+5078                             credential:BS                                   final_term:False                                       outcome:pass
+5003                             credential:BS                                       outcome:pass                                     transfer:False
+4733                             credential:BS                                   final_term:False                                     transfer:False
+4521                             credential:BS                                       outcome:pass                     prior_full_part_time:Full-time
+4491                              outcome:pass                              term_length:(42, 120]                                     transfer:False
+4425                          final_term:False                                       outcome:pass                              term_length:(42, 120]
+4416                             credential:BS                     prior_full_part_time:Full-time                                     transfer:False
+4397                              outcome:pass                     prior_full_part_time:Full-time          prior_term_fraction_completed_credits:1.0
+4388                              outcome:pass                              term_length:(42, 120]                     unmet_need:(-40.917, 5114.625]
+4382                              outcome:pass                     prior_full_part_time:Full-time                               term_start_month:Jan
+4365            prior_full_part_time:Full-time                               term_start_month:Jan                                     transfer:False
+4338                              outcome:pass          prior_term_fraction_completed_credits:1.0                                     transfer:False
+4336            prior_full_part_time:Full-time          prior_term_fraction_completed_credits:1.0                                     transfer:False
+4321                     term_length:(42, 120]                                     transfer:False                     unmet_need:(-40.917, 5114.625]
+4298                          final_term:False                                       outcome:pass          prior_term_fraction_completed_credits:1.0
+4232                             credential:BS                                   final_term:False                     prior_full_part_time:Full-time
+4216                              outcome:pass                               term_start_month:Jan                                     transfer:False
+4150                          final_term:False                              term_length:(42, 120]                                     transfer:False
+4147                          final_term:False                                       outcome:pass                               term_start_month:Jan
+
+Interesting Rules
+ -0.13%                      If term_length:(42, 120] then final_term:False
+ -0.12%                       If term_start_month:Jan then final_term:False
+ -0.11%                      If term_length:(42, 120] then outcome:pass
+ -0.11%  If prior_term_fraction_completed_credits:1.0 then final_term:False
+ -0.10%                       If term_start_month:Jan then outcome:pass
+ -0.10%                              If credential:BS then transfer:False
+ -0.10%                              If credential:BS then outcome:pass
+ -0.10%                              If credential:BS then final_term:False
+ -0.10%  If prior_term_fraction_completed_credits:1.0 then outcome:pass
+ -0.10%  If prior_term_fraction_completed_credits:1.0 then transfer:False
+ -0.10%                      If term_length:(42, 120] then transfer:False
+ -0.10%                             If transfer:False then outcome:pass
+ -0.09%                               If outcome:pass then transfer:False
+ -0.09%                           If final_term:False then transfer:False
+ -0.09%             If prior_full_part_time:Full-time then final_term:False
+ -0.09%             If prior_full_part_time:Full-time then transfer:False
+ -0.09%             If unmet_need:(-40.917, 5114.625] then transfer:False
+ -0.09%                       If term_start_month:Jan then transfer:False
+ -0.09%             If unmet_need:(-40.917, 5114.625] then outcome:pass
+ -0.09%                             If transfer:False then final_term:False
+ -0.09%             If prior_full_part_time:Full-time then outcome:pass
+ -0.08%                            If on_campus:False then outcome:pass
+  0.06%                       If term_start_month:Jan then prior_full_part_time:Full-time
+  0.28%                      If term_length:(42, 120] then unmet_need:(-40.917, 5114.625]
+  0.31%             If unmet_need:(-40.917, 5114.625] then term_length:(42, 120]
